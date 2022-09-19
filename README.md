@@ -21,3 +21,5 @@
 5. The other variation is the selected input, which should have a blue border and subtle box-shadow. This can be done with the :focus pseudo-class you’ve learned about in an earlier lesson.
 6. Do not worry about making your project look nice on mobile, but DO resize your browser a little bit to make sure that it’s not completely broken at different desktop resolutions.
 7. Checking that the password fields match each other requires javascript. Try to implement this if you feel confident, otherwise just validate each field separately.
+
+['https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png'](Link To Design File)
