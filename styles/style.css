@@ -51,9 +51,9 @@ html {
 }
 
 .col__left-header {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
   flex: 1;
