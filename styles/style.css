@@ -1,5 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@font-face {
+  font-family: "Bombing";
+  src: url("../assets/fonts/bombing-webfont.woff") format("woff"), url("../assets/fonts/bombing-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Squid";
+  src: url("../assets/fonts/game_of_squids-webfont.woff") format("woff"), url("../assets/fonts/game_of_squids-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Odin";
+  src: url("../assets/fonts/norse-bold-webfont.woff") format("woff"), url("../assets/fonts/norse-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 10px
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+
+  background-image: url("../assets/images/ocean.avif");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;  
+}
+
+.col__left-header {
+  font-family: Odin, sans-serif;
+  color: #fff;
+  font-size: 6rem;
+  text-shadow: 1px 1px 2px #000;;
+}
+
+.right {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1.5em;
+  flex: 2;
+}
+
+.col__right-header {
+  margin: 1.5em 0;
+}
+
+.col__right-header > p {
+  font-size: 2rem;
+  margin: .5em 0;
+}
+
+hr {
+  margin: 3em;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 95%;
+}
+
+.form-row > label {
+  font-size: 1.2rem;
+  margin-bottom: .5em;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+input {
+  height: 3em;
+  box-shadow: inset 1px 1px 3px #ccc;
+  padding-left: .75em;
+  border-radius: 3px;
+}
+
+input:required {
+  border: 1px solid black;
+}
+
+input:optional {
+  border: 1px solid silver;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span:before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid + span::before {
+  font-size: 1.2rem;
+  content: "x";
+  color: coral;
+}
+
+input:valid+span::before {
+  font-size: 1.2rem;
+  content: "✓";
+  color: green;
+}
+
+input:required+span::after {
+  font-size: 0.8rem;
+  content: "required";
+  color: #fff;
+  background-color: #000;
+  padding: 3px 10px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 5px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .col__right-header > p {
+    font-size: 2.5rem;
+  }
+
+  .left {
+    width: 40vw;
+    height: 100vh;
+  }
+
+  .right {
+    margin-top: 7em;
+  }
+  
 }
