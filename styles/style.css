@@ -28,6 +28,7 @@
 }
 
 html {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 10px
 }
 
@@ -52,12 +53,14 @@ html {
 .col__left-header {
   font-family: Odin, sans-serif;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
   font-size: 6rem;
   text-shadow: 1px 1px 2px #000;;
 }
 
 .right {
-  font-family: 'Ubuntu', sans-serif;
   padding: 1.5em;
   flex: 2;
 }
@@ -105,6 +108,14 @@ input:optional {
   border: 1px solid silver;
 }
 
+input:invalid {
+  box-shadow: 3px 3px 2px rgba(255, 127, 80, 0.7);
+}
+
+input:valid {
+  box-shadow: 3px 3px 2px rgba(0, 255, 0, 0.7);
+}
+
 input + span {
   position: relative;
 }
@@ -121,13 +132,14 @@ input:invalid + span::before {
   color: coral;
 }
 
-input:valid+span::before {
+input:valid + span::before {
   font-size: 1.2rem;
   content: "✓";
   color: green;
 }
 
-input:required+span::after {
+
+input:required + span::after {
   font-size: 0.8rem;
   content: "required";
   color: #fff;
@@ -136,12 +148,22 @@ input:required+span::after {
 }
 
 button {
-  background-color: #000;
+  background-color: #007168;
   color: #fff;
   font-size: 1.6rem;
   padding: 1em;
   margin: 1.5em 0;
+  border: none;
   border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.login {
+  font-size: 1.2rem;
 }
 
 @media (min-width: 700px) {
@@ -160,7 +182,12 @@ button {
   }
 
   .right {
-    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4em;
+    max-width: 50%;
+    flex: 5;
   }
-  
+
 }
