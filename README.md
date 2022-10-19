@@ -1,6 +1,6 @@
 # Assignment
 
-![Signup form img]('https://res.cloudinary.com/angelrodriguez/image/upload/v1666207961/Signup%20Form/Screen_Shot_2022-10-19_at_3.32.16_PM.png "Signup Form")
+![Signup form img](https://res.cloudinary.com/angelrodriguez/image/upload/v1666207961/Signup%20Form/Screen_Shot_2022-10-19_at_3.32.16_PM.png "Signup Form")
 
 ## Step 1: Set up and planning
 
