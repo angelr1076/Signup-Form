@@ -1,5 +1,7 @@
 # Assignment
 
+![Signup form img]('https://res.cloudinary.com/angelrodriguez/image/upload/v1666207961/Signup%20Form/Screen_Shot_2022-10-19_at_3.32.16_PM.png "Signup Form")
+
 ## Step 1: Set up and planning
 
 1. Set up your HTML and CSS files with some simple dummy content, just to make sure you have everything linked correctly.
